@@ -23,3 +23,12 @@ print(table.concat(parsed_text,"|"))
 ### `tinysegmenter.segment(string)`
 Returns a table of Japanese sentences split into words.
 
+## License
+This program is provided under BSD-3-Clause.
+
+Copyright information is here: `./lua/tinysegmenter.lua`
+
+## Acknowledgments
+This program is originally created by Taku Kudo in 2008, modified for ES module by Taisuke Fukuno in 2022.
+Also, `utf8.lua` is provided under CC0 by NAKAI Tsuyoshi.
+
