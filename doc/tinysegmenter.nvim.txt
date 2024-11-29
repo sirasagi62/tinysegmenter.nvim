@@ -30,9 +30,11 @@ USAGE ~
 FUNCTIONS ~
                                                     *tinysegmenter-functions*
 
-    - tinysegmenter.segment(string) *tinysegmenter.segment*
+tinysegmenter.segment({text}) *tinysegmenter.segment*
     
-    Returns a table of Japanese sentences split into words.
-
+    Returns a table of Japanese text split into words.
+    
+    Parameters: ~
+     - {text} (`string`) Text written in Japanese to parse
 
 vim:tw=78:ts=8:noet:ft=help:norl:
