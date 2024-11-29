@@ -5,7 +5,7 @@
 
 -- modified for ES modules by Taisuke Fukuno 2022-05-30
 -- ported for lua by OKABE Gota 2024-11-29
-local utf8=require("utf8")
+local utf8=require("tinysegmenter/utf8")
 
 local function checkCharByArr(c,arr)
   for _,v in ipairs(arr) do
@@ -191,4 +191,6 @@ local function segment (input)
   result[#result+1]=word;
   return result;
 end;
-return { segment };
+local M={}
+M.segment = segment
+return M

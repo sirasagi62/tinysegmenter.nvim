@@ -1,0 +1,38 @@
+*tinysegmenter.nvim.txt*              the documentation of tinysegmenter.nvim
+=============================================================================
+TinySegmenter.nvim~
+
+TinySegmenter.nvim is a plugin that provides a Lua port of TinySegmenter, an ultra-minimal Japanese morphological analyzer. Since the plugin depends only on the Lua standard library, it can be executed anywhere that supports Lua 5.1 or later.
+
+INSTALL ~
+                                                      *tinysegmenter-install*
+
+You can use any of your favorite Neovim package managers.
+
+>
+    # tani/vim-jetpack
+    Jetpack "sirasagi62/tinysegmenter.nvim"
+<
+
+USAGE ~
+                                                        *tinysegmenter-usage*
+
+>
+    local tinysegmenter = require("tinysegmenter")
+
+    -- returns a table like {"これ","は","文章","です","。"}
+    local parsed_text = tinysegmenter.segment("これは文章です。")
+
+    -- これ|は|文章|です|。
+    print(table.concat(parsed_text,"|"))
+<
+
+FUNCTIONS ~
+                                                    *tinysegmenter-functions*
+
+    - tinysegmenter.segment(string) *tinysegmenter.segment*
+    
+    Returns a table of Japanese sentences split into words.
+
+
+vim:tw=78:ts=8:noet:ft=help:norl:
