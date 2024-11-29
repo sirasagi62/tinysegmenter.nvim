@@ -1,5 +1,5 @@
 # TinySegmenter.nvim
-TinySegmenter.nvim is a plugin that provides a Lua port of TinySegmenter, an ultra-minimal Japanese morphological analyzer. Since the plugin depends only on the Lua standard library, it can be executed anywhere that supports Lua 5.1 or later.
+TinySegmenter.nvim is a plugin that provides a Lua port of TinySegmenter, an ultra-minimal Japanese tokenizer. Since the plugin depends only on the Lua standard library, it can be executed anywhere that supports Lua 5.1 or later.
 
 ## Install
 ```lua
